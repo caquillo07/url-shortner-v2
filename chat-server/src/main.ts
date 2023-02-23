@@ -1,4 +1,5 @@
-const express = require('express')
+import express from "express";
+
 const app = express()
 const port = 3001
 
@@ -12,5 +13,6 @@ app.post("/url", (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
-})
+    // tslint:disable-next-line:no-console
+    console.log(`server started at http://localhost:${port}`);
+});
