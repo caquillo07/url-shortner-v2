@@ -6,6 +6,11 @@ app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
+app.post("/url", (req, res) => {
+    console.log(req.body);
+    res.status(200).send();
+})
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
